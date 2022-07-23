@@ -1,5 +1,5 @@
-*{
-    /* background-color: #eeeee4; */
+/* some help from run-buddy :) */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -44,6 +44,7 @@ header nav ul li a {
     font-size: larger;
 }
 
+/* adding some pseudo classes to do things when it hovers */
 header nav ul li a:hover {
    text-shadow: 2px 2px 4px #000;
 }
@@ -51,3 +52,61 @@ header nav ul li a:hover {
 header h1:hover {
     text-shadow: 2px 2px 4px #000;
 }
+
+#about {
+    padding: 20px 30px;
+    background-color:#063970;
+    border-radius: 100px 0 0 100px ;
+    border: solid #154c79 10px;
+    color: white;
+}
+
+#about h2, h3 {
+    margin: 10px 0 10px 0;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.article {
+    margin: 0 auto 30px auto;
+    overflow: auto;
+}
+.article img {
+    width: 25%;
+    float: left;
+    margin: 0 50px 0 50px;
+}
+
+
+
+
+
+
+.section-title {
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    display: inline-block;
+    border-bottom: 3px solid;
+  }
+
+
+.primary-border {
+  border-color: #fce138;
+}
+
+.trainer-bio {
+    padding: 35px;
+    float: left;
+    width: 65%;
+  }
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
