@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color:#eeeee4 ;
+    background-color: #eeeee4;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -15,8 +15,8 @@ also adding flex to this parent container to affect the child navs */
 
 header {
     padding: 20px 30px;
-    background-color:#063970;
-    border-bottom-left-radius: 100px ;
+    background-color: #063970;
+    border-bottom-left-radius: 100px;
     border: solid #154c79 10px;
     display: flex;
     justify-content: space-between;
@@ -51,30 +51,52 @@ header nav ul li a {
 
 /* adding some pseudo classes to do things when it hovers */
 header nav ul li a:hover {
-   text-shadow: 2px 2px 4px #000;
+    text-shadow: 2px 2px 4px #000;
 }
 
 header h1:hover {
     text-shadow: 2px 2px 4px #000;
 }
-/* starting to add styles to the article ID 
+
+#contact ul li {
+    display: flex;
+    text-decoration: none;
+}
+
+#contact ul li a {
+    color: white;
+
+}
+
+/* css that I can reference any time in my html */
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* starting to add styles to the article class
 
 also adding flex*/
 .article {
     padding: 20px 30px;
-    background-color:#063970;
-    border-radius: 100px 0 0 100px ;
+    background-color: #063970;
+    border-radius: 100px 0 0 100px;
     border: solid #154c79 10px;
     color: white;
     margin: 0 auto 0 auto;
     overflow: auto;
 }
 
-.article h2, h3 {
+.article h2,
+h3 {
     margin: 10px 0 10px 0;
     text-decoration: underline;
     font-weight: bold;
 }
+
 .fishing img {
     width: 25%;
     float: left;
@@ -84,6 +106,7 @@ also adding flex*/
 
 .flex_container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -125,13 +148,29 @@ also adding flex*/
     align-self: flex-end;
 }
 
+@media screen and (max-width: 900px) {
 
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
 
-/* css that I can reference any time in my html */
-.text-left {
-  text-align: left;
-}
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
 
-.text-right {
-  text-align: right;
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .box {
+        flex-wrap:wrap;
+    }
 }
